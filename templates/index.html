@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<h1 class="index_title">Классификатор текстов на Python</h1>
+<h1 class="page_info">Елфимов Александр Михайлович</h1>
+<div class="set-mid">
+<label for="text_input">Введите текст:</label><br>
+    <textarea id="text_input" name="text_input" rows="8" cols="150"></textarea><br>
+    <button onclick="sendPostRequest()">Обработать</button>
+</div>
+<h1 class="set-mid" id="answer">Вердикт: -</h1>
+{% endblock %}
